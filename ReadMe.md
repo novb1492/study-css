@@ -82,12 +82,16 @@ justify-content
 
 align-items  
 -반대축 아이템배치  
+-한 줄을 기준으로 정렬 
+-align-items는 수직축의 라인을 기준으로 아이템들이 정렬이 되고  
     -center  
 
     -baseline  
         -아이템이 균등해짐  
 align-content  
-    -justify-content 흡사하지만 반대축제어  
+-align-content는 두 줄부터 사용하는데 의미가 있다  
+-align-content는 수직축의 라인을 기준으로 (두 줄 이상 일 때만) 라인 자체가 정렬이 된다.  
+-justify-content 흡사하지만 반대축제어  
 
 
 아이템 속성값  
