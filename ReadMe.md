@@ -42,52 +42,62 @@ align-self
 좌에서우로 정렬시 수평축이 중심축  
 위에서아래로 정렬시 수직축이 중심축  
 
-flex-direction 
-    -row
-        -중심축 수평축
-        -기본값 row 왼->오
-        -row-reverse 오->왼 순서도 바뀜
-    -column
-        -중심축 수직
-        -기본값 위->아래
-        -column-reverse 아래->위 순서도 바뀜
-flex-wrap
-    -nowrap
-        -기본값 창이 작아저도 붙어있음
-    -wrap
-        -창이 작아지면 자동적으로 줄바꿈
-    -wrap-reverse
-        -반대로 맵핑됨
-flex-flow
-    -direction/wrap한번에 적을 수있다
-    -ex) flex-flow: column wrap;
+컨테이너 속성값   
+flex-direction  
+    -row  
+        -중심축 수평축  
+        -기본값 row 왼->오  
+        -row-reverse 오->왼 순서도 바뀜  
+    -column  
+        -중심축 수직  
+        -기본값 위->아래  
+        -column-reverse 아래->위 순서도 바뀜  
+flex-wrap  
+    -nowrap  
+        -기본값 창이 작아저도 붙어있음  
+    -wrap  
+        -창이 작아지면 자동적으로 줄바꿈  
+    -wrap-reverse  
+        -반대로 맵핑됨  
+flex-flow  
+    -direction/wrap한번에 적을 수있다  
+    -ex) flex-flow: column wrap;  
 
-justify-content
--중심축 아이템배치
-    -flex-start
-        -아이템 배치 정함
+justify-content  
+-중심축 아이템배치  
+    -flex-start  
+        -아이템 배치 정함  
         -수직=위아래 수평=좌우 
-    -flex-end
-        -순서는 유지하대 배치가 반대로
-        -수직=아래위 수평우좌
-    -center
-        -중심축중앙 위치
-    -space-around
-        -박스룰 둘러싸게 공간을 넣어줌
-    -space-evenly
-        -동일 한 사이즈 공안으로 넣어줌
-    -space-between
-        -양 끝은 화면에 맞게 일정한 공간넣어줌
+    -flex-end  
+        -순서는 유지하대 배치가 반대로  
+        -수직=아래위 수평우좌  
+    -center  
+        -중심축중앙 위치  
+    -space-around  
+        -박스룰 둘러싸게 공간을 넣어줌  
+    -space-evenly  
+        -동일 한 사이즈 공안으로 넣어줌  
+    -space-between  
+        -양 끝은 화면에 맞게 일정한 공간넣어줌  
 
-align-items
--반대축 아이템배치
-    -center
+align-items  
+-반대축 아이템배치  
+    -center  
 
-    -baseline
-        -아이템이 균등해짐
-align-content
-    -justify-content 흡사하지만 반대축제어
-
-
+    -baseline  
+        -아이템이 균등해짐  
+align-content  
+    -justify-content 흡사하지만 반대축제어  
 
 
+아이템 속성값  
+flex-grow  
+    -컨테이너 메꾸는 정도  
+flex-shrink  
+    -컨테이너 사이즈 변경시 얼마나 줄어들지  
+flex-basis  
+    -위 두개 강 없을시  
+    -크기변화에 따라 비율 유지하지  
+    -기본값 auto
+align-self  
+    -아이템 하나하나 개별 제어  
