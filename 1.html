@@ -24,12 +24,14 @@
         .menucontainer li {
             padding: 0.5rem 0.5rem;
         }
-        .links{
-            padding: 0 0 0 0;
-        }
+
         .menucontainer li:hover {
             background-color: red;
             border-radius: 4px
+        }
+        .links{
+            display: flex;
+            list-style: none;
         }
         @media screen and (max-width: 700px) {
             .nav{
@@ -42,8 +44,10 @@
                 align-items: center;
                 width: 100%;
             }
-            .menucontainer li{
-
+            .links{
+                justify-content: center;
+                width: 100%;
+                padding-left: 0;
             }
            
         }
@@ -62,10 +66,10 @@
             <li>FAQ</li>
             <li>Bookings</li>
         </ul>
-        <div class="links">
-            <span>3</span>
-            <span>4</span>
-        </div>
+        <ul class="links">
+            <li>3</li>
+            <li>4</li>
+        </ul>
     </nav>
 </body>
 </html>
