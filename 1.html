@@ -18,17 +18,40 @@
         }
         .menucontainer {
             list-style:none;
-            padding: 0 0 0 0;
+            padding-left: 0;
+            display: flex;
         }
         .menucontainer li {
-            float: left;
-            padding-left: 1rem;
+            padding: 0.5rem 0.5rem;
+        }
+        .links{
+            padding: 0 0 0 0;
+        }
+        .menucontainer li:hover {
+            background-color: red;
+            border-radius: 4px
+        }
+        @media screen and (max-width: 700px) {
+            .nav{
+                background-color: black;
+                flex-direction:column;
+                align-items: flex-start;
+            }
+            .menucontainer{
+                flex-direction:column;
+                align-items: center;
+                width: 100%;
+            }
+            .menucontainer li{
+
+            }
+           
         }
     </style>
 </head>
 <body>
     <nav class="nav">
-        <div>
+        <div class="homeArea">
             <i class="fa-brands fa-accusoft"></i>
             <span>드림코딩</span>
         </div>
@@ -39,7 +62,7 @@
             <li>FAQ</li>
             <li>Bookings</li>
         </ul>
-        <div>
+        <div class="links">
             <span>3</span>
             <span>4</span>
         </div>
