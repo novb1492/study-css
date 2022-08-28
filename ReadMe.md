@@ -111,3 +111,13 @@ https://www.youtube.com/watch?v=8-uJ_4136uI
 flex grid/flext box/%/vw/vh/@meida활용  
 https://www.youtube.com/watch?v=X91jsJyZofw  
 반응형 네비바 만들어보기  
+
+새로배운점  
+1.ul태그 역시 flex로 제어하는게 좋다  
+2.justify-content사용시 각 박스 헷갈리는거 조심  
+ex)
+-가로가 줄어들시 nav 클래스가 flex-direction로 바뀜  
+하지만 .links클래스의 속성은 row그대로임 이떄 중앙 정렬을  
+사용하려면 중심축을 건든는 justify-content를 사용해야함  
+처음에 헷갈려서 반대축 건드는 align-items사용  
+
