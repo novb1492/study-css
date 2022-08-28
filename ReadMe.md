@@ -105,3 +105,9 @@ flex-basis
     -기본값 auto
 align-self  
     -아이템 하나하나 개별 제어  
+
+Responsive Web--------------------------------  
+https://www.youtube.com/watch?v=8-uJ_4136uI  
+flex grid/flext box/%/vw/vh/@meida활용  
+https://www.youtube.com/watch?v=X91jsJyZofw  
+반응형 네비바 만들어보기  

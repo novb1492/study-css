@@ -5,82 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/37cd0d651d.js" crossorigin="anonymous"></script>
     <style>
-        .container{
-            background: beige;
-            height: 100vh;
+        .nav{
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-between;
             align-items: center;
         }
-        .item{
-            width: 40px;
-            height: 40px;
+        .menucontainer {
+            list-style:none;
+            padding: 0 0 0 0;
         }
-        .item1{
-            background:red;
-            
-        }
-        .item2{
-            background:orange;
-            flex-grow: 1;
-            flex-shrink: 1;
-        }
-        .item3{
-            background:yellow;
-            flex-grow: 1;
-            flex-shrink: 1;
-        }
-        .item4{
-            background:green;
-
-        }
-        .item5{
-            background:blue;
-
-        }
-        .item6{
-            background:black;
-
-        }
-        .item7{
-            background:purple;
-
-        }
-        .item8{
-            background:pink;
-
-        }
-        .item9{
-            background:wheat;
-
-        }
-        .item10{
-            background:gold;
-
+        .menucontainer li {
+            float: left;
+            padding-left: 1rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>
-        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>
-    </div>
+    <nav class="nav">
+        <div>
+            <i class="fa-brands fa-accusoft"></i>
+            <span>드림코딩</span>
+        </div>
+        <ul class="menucontainer">
+            <li>Home</li>
+            <li>Gallary</li>
+            <li>Wrddings</li>
+            <li>FAQ</li>
+            <li>Bookings</li>
+        </ul>
+        <div>
+            <span>3</span>
+            <span>4</span>
+        </div>
+    </nav>
 </body>
 </html>
