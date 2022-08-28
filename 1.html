@@ -15,7 +15,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: navy;
-            padding-top: 0.5rem;
+            padding: 0.5rem;
         }
         .menucontainer {
             list-style:none;
@@ -37,6 +37,10 @@
         .navtoggle{ 
             display: none;
         }
+        .menucontainer.active,
+        .links.active{
+            display: flex;
+        }
         @media screen and (max-width: 700px) {
             .nav{
                 background-color: black;
@@ -44,14 +48,17 @@
                 align-items: flex-start;
             }
             .menucontainer{
+                display: none;
                 flex-direction:column;
                 align-items: center;
                 width: 100%;
             }
             .links{
+                display: none;
                 justify-content: center;
                 width: 100%;
                 padding-left: 0;
+                margin-top: 0;
             }
             .navtoggle{ 
                 display: block;
@@ -80,7 +87,13 @@
             <li>3</li>
             <li>4</li>
         </ul>
-        <i class="fa-solid fa-bars navtoggle"></i>
+        <i class="fa-solid fa-bars navtoggle" onclick="active()"></i>
     </nav>
+    <script>
+        function active(){
+            document.querySelector('.menucontainer').classList.toggle('active');
+            document.querySelector('.links').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
