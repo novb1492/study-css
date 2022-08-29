@@ -121,5 +121,5 @@ ex)
 사용하려면 중심축을 건든는 justify-content를 사용해야함  
 처음에 헷갈려서 반대축 건드는 align-items사용  
 youtube-------------------------------------  
-
-
+position: sticky 사용시 속성 부여 필요  
+ex)top:0  
