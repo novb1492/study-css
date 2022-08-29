@@ -7,93 +7,128 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/37cd0d651d.js" crossorigin="anonymous"></script>
     <style>
-        body{
-            margin: 0;
-        }
-        .nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: navy;
-            padding: 0.5rem;
-        }
-        .menucontainer {
-            list-style:none;
-            padding-left: 0;
-            display: flex;
-        }
-        .menucontainer li {
-            padding: 0.5rem 0.5rem;
-        }
+      body{
+        margin: 0;
+      }
+      .nav{
+        background-color: black;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbuttons{
+        list-style: none;
+        display: flex;
+        margin: 0;
+      }
+      .navbutton{
+        padding: 0.5rem;
+      }
+      .video{
+        width: 100%;
+        height: 40vh;
+      }
+      .info{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.5rem;
 
-        .menucontainer li:hover {
-            background-color: red;
-            border-radius: 4px
-        }
-        .links{
-            display: flex;
-            list-style: none;
-        }
-        .navtoggle{ 
-            display: none;
-        }
-        .menucontainer.active,
-        .links.active{
-            display: flex;
-        }
-        @media screen and (max-width: 700px) {
-            .nav{
-                background-color: black;
-                flex-direction:column;
-                align-items: flex-start;
-            }
-            .menucontainer{
-                display: none;
-                flex-direction:column;
-                align-items: center;
-                width: 100%;
-            }
-            .links{
-                display: none;
-                justify-content: center;
-                width: 100%;
-                padding-left: 0;
-                margin-top: 0;
-            }
-            .navtoggle{ 
-                display: block;
-                position: absolute;
-                right: 2rem;
-                font-size: 1.3rem;
-            }
-           
-        }
+      }
+      .hashtags{
+        display: flex;
+        flex-direction: row;
+      }
+      .hashtag{
+        padding-top: 0.2rem;
+        color: blue;
+      }
+      .titleAndView{
+        display: flex;
+        flex-direction: column;
+      }
+      .likeArea{
+        display: flex;
+        justify-content: space-between;
+
+      }
+      .iconsize{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .iconeText{
+        font-size: 0.001rem;
+      }
+      .title{
+        font-size: 1rem;
+      }
+      .view{
+        font-size: 0.2rem;
+      }
+      .person{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .container{
+        display: flex;
+        
+      }
+      
+     
+
     </style>
 </head>
 <body>
     <nav class="nav">
-        <div class="homeArea">
-            <i class="fa-brands fa-accusoft"></i>
-            <span>드림코딩</span>
+        <div>
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
         </div>
-        <ul class="menucontainer">
-            <li>Home</li>
-            <li>Gallary</li>
-            <li>Wrddings</li>
-            <li>FAQ</li>
-            <li>Bookings</li>
+        <ul class="navbuttons">
+            <li class="navbutton"> <i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="navbutton"> <i class="fa-solid fa-bars"></i></li>
         </ul>
-        <ul class="links">
-            <li>3</li>
-            <li>4</li>
-        </ul>
-        <i class="fa-solid fa-bars navtoggle" onclick="active()"></i>
     </nav>
-    <script>
-        function active(){
-            document.querySelector('.menucontainer').classList.toggle('active');
-            document.querySelector('.links').classList.toggle('active');
-        }
-    </script>
+    <iframe class="video" src="https://www.youtube.com/embed/oZS74-w719E"></iframe>
+    <article class="info">
+         <div class="hashtags">
+            <span class="hashtag">#hashtag</span>
+            <span class="hashtag">#hashtag</span>
+        </div>
+        <div class="titleAndView">
+            <span class="title" >클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+            <span class="view">20221203 1view</span>
+        </div>
+        <div class="likeArea">
+            <i class="fa-solid fa-thumbs-up iconsize">
+                <span class="iconeText">like</span>
+            </i>
+            <i class="fa-solid fa-thumbs-down iconsize">
+                <span class="iconeText">bad</span>
+            </i>
+            <i class="fa-solid fa-arrow-turn-up iconsize">
+                <span class="iconeText">share</span>
+            </i>
+            <i class="fa-solid fa-plus iconsize">
+                <span class="iconeText">save</span>
+            </i>
+            <i class="fa-solid fa-flag iconsize">
+                <span class="iconeText">flag</span>
+            </i>
+        </div>
+        <div class="person">
+            <div class="container">
+                <img src="./사본 -스크린샷(2146).png" alt="" class="img">
+                <div class="nameArea">
+                    <span>드림코딩엘리</span>
+                    <span>1m</span>
+                </div>
+            </div>
+            <span class="sub">구독</span>
+        </div>
+    </article>
 </body>
 </html>
