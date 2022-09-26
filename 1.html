@@ -10,13 +10,77 @@
       body{
         margin: 0;
       }
-    
+      .nav{
+        display: flex;
+      }
+      .container{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+        padding: 0;
+        width: 100%;
+      }
+      .container2{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .mainText{
+        font-size: 2.5rem;
+      }
+      .hat-icon{
+        font-size:2rem;        
+      }
+      .search-input{
+        width: 30rem;
+        height: 3rem;
+        margin-left: 2rem;
+      }
+      .search-glass{
+        /* height: 4rem; */
+      }
+      .start-and-arrow{
+        display: flex;
+      }
+      .start-text{
+        font-size: 0.7rem;
+        padding-right: 0.5rem;
+      }
+      .start-icon{
+        width: 0.5rem;
+      }
+      .default-margin{
+        margin: 0 25rem;
+      }
+      .text1{
+        font-size: 0.8rem;
+      }
+      .search-area{
+        display: flex;
+      }
+      .search-button{
+        width: 5rem;
+      }
     </style>
 </head>
 <body>
-    <nav>
-      
+  <div class="default-margin">
+    <nav class="nav">
+      <ul class="container">
+        <li><i class="fa-solid fa-hat-cowboy hat-icon"></i></li>
+        <li><span class="mainText">NAVER</span></li>
+        <li class="search-area"><input type="text" class="search-input"><i class="fa-solid fa-magnifying-glass search-glass fa-3x"></i></li>
+      </ul>
+      <ul class="container2">
+        <li class="start-and-arrow"><span class="start-text">네이버를 시작페이지로</span><i class="fa-solid fa-arrow-right-long start-icon"></i></li>
+        <li class="text1">쥬니버네이버</li>
+        <li  class="text1">해피빈</li>
+      </ul>
     </nav>
-    
+  </div>
 </body>
 </html>
