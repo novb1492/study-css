@@ -5,51 +5,236 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/37cd0d651d.js" crossorigin="anonymous"></script>
     <style>
-        div{
-            width: 50px;
-            height: 50px;
-            margin-bottom: 20px;
-            background-color: red;
-        }
-        .box{
-            background-color: blue;
-            position: fixed;
-            left: 1px;
-            top: 20px;
-        }
-        .container{
-            left: 20px;
-            top: 20px;
-            background-color: yellow;
-            position: sticky;
-        }
+      body{
+        margin: 0;
+      }
+      ul{
+        padding-left: 0;
+      }
+      .nav{
+        display: flex;
+        padding-bottom: 1.5rem;
+      }
+      .container{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+        padding: 0;
+        width: 100%;
+      }
+      .container2{
+        list-style: none;
+        display: flex;
+        margin-top: 0.5rem;
+        padding: 0;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+      .mainText{
+        font-size: 2.5rem;
+        color: green;
+      }
+      .hat-icon{
+        font-size:2rem;    
+        margin-right: 0.5rem;    
+      }
+      .search-input{
+        width: 30rem;
+        height: 3rem;
+        margin-left: 2rem;
+        border-color:green;
+      }
+      .start-and-arrow{
+        display: flex;
+      }
+      .start-text{
+        font-size: 0.7rem;
+        padding-right: 0.5rem;
+      }
+      .start-icon{
+        width: 0.5rem;
+      }
+      .default-margin{
+        margin: 0 25rem;
+      }
+      .text1{
+        font-size: 0.8rem;
+      }
+      .search-area{
+        display: flex;
+      }
+      .search-button{
+        width: 5rem;
+      }
+      .search-glass{
+        border: 0.1rem solid;
+        border-color:green;
+      }
+      .line1{
+        background-color: #eee;
+        border: 0 none;
+        color: #eee;
+        height: 0.1rem;
+      }
+      .menu{
+        display: flex;
+      }
+      .container3{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+      }
+      .mail{
+        list-style: none;
+        display: flex;
+      }
+      .shopping{
+        list-style: none;
+        display: flex;
+      }
+      .tv{
+        list-style: none;
+        display: flex;
+      }
+      .container4{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+      }
+      .plus-button{
+        margin-right: 4rem;
+      }
+      .green-text{
+        color: green;
+      }
+      .mail-icon{
+        padding-right: 0.5rem;
+      }
+      .tv-icon{
+        padding-right: 0.2rem;
+      }
+      .shopping-icon{
+        padding-left: 0.2rem;
+      }
+      .weather{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+      }
+      .weather-text{
+        font-size: 0.7rem;
+      }
+      .article{
+        display: flex;
+        justify-content: space-between;
+      }
+      .login-area{
+        list-style: none;
+        display: column;
+        justify-content:space-between;
+        height: 7rem;
+        border: 0.1rem solid;
+        width: 20rem;
+        padding: 1rem 1rem;
+      }
+      .login-button{
+        list-style: none;
+        background-color: green;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-text{
+        margin-right: 0.5rem;
+      }
+      .login-text2{
+        font-size: 0.5rem;
+      }
     </style>
 </head>
 <body>
-    <article class="container">
-        <div></div>
-        <div class="box"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </article>
-   
+    <nav class="nav default-margin">
+      <ul class="container">
+        <li><i class="fa-solid fa-hat-cowboy hat-icon"></i></li>
+        <li><span class="mainText">NAVER</span></li>
+        <li class="search-area"><input type="text" class="search-input"><i class="fa-solid fa-magnifying-glass search-glass fa-3x search-glass"></i></li>
+      </ul>
+      <ul class="container2">
+        <li class="start-and-arrow"><span class="start-text">네이버를 시작페이지로</span><i class="fa-solid fa-arrow-right-long start-icon"></i></li>
+        <li class="text1">쥬니버네이버</li>
+        <li  class="text1">해피빈</li>
+      </ul>
+    </nav>
+    <hr class="line1"></hr>
+    <section class="menu default-margin">
+      <ul class="container3">
+        <li>
+           <ul class="mail">
+              <li><i class="fa-solid fa-envelope green-text mail-icon"></i></li>
+              <li class="green-text">메일</li>
+           </ul>
+        </li>
+        <li class="green-text">카페</li>
+        <li class="green-text">블로그</li>
+        <li class="green-text">지식iN</li>
+        <li class="green-text">쇼핑</li>
+        <li>
+          <ul class="shopping">
+            <li class="green-text">쇼핑</li>
+            <li><i class="fa-solid fa-headset green-text shopping-icon"></i></li>
+          </ul>
+        </li>
+        <li class="green-text">페이</li>
+        <li>
+          <ul class="tv">
+             <li><i class="fa-solid fa-play green-text tv-icon"></i></li>
+             <li class="green-text">TV</li>
+          </ul>
+        </li>
+        <li>사전</li>
+        <li>뉴스</li>
+        <li>증권</li>
+        <li>부동산</li>
+        <li>지도</li>
+        <li>VIBE</li>
+        <li>도서</li>
+        <li>웹툰</li>
+        <li class="plus-button">더보기</li>
+        <ul class="container4">
+          <li class="weather-text">달</li>
+          <li class="weather-text">맑음</li>
+          <li>
+            <ul class="weather">
+              <li class="weather-text">20.2</li>
+              <li class="weather-text">/</li>
+              <li class="weather-text">25.2</li>
+            </ul>
+          </li>
+          <li class="weather-text">흑석동</li>
+        </ul>
+      </ul>
+    </section>
+    <section class="article default-margin">
+      <div class="left">l</div>
+      <div class="right">
+          <ul class="login-area">
+            <li class="login-text2">네이버를 더 안전하고 편리하게 이용하세요</li>
+            <li>
+              <ul class="login-button">
+                <li class="login-text">NAVER</li>
+                <li>로그인</li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </section>
 </body>
 </html>
