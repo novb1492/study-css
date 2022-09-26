@@ -87,7 +87,6 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-
         width: 100%;
       }
       .mail{
@@ -131,6 +130,33 @@
       }
       .weather-text{
         font-size: 0.7rem;
+      }
+      .article{
+        display: flex;
+        justify-content: space-between;
+      }
+      .login-area{
+        list-style: none;
+        display: column;
+        justify-content:space-between;
+        height: 7rem;
+        border: 0.1rem solid;
+        width: 20rem;
+        padding: 1rem 1rem;
+      }
+      .login-button{
+        list-style: none;
+        background-color: green;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-text{
+        margin-right: 0.5rem;
+      }
+      .login-text2{
+        font-size: 0.5rem;
       }
     </style>
 </head>
@@ -195,6 +221,20 @@
           <li class="weather-text">흑석동</li>
         </ul>
       </ul>
+    </section>
+    <section class="article default-margin">
+      <div class="left">l</div>
+      <div class="right">
+          <ul class="login-area">
+            <li class="login-text2">네이버를 더 안전하고 편리하게 이용하세요</li>
+            <li>
+              <ul class="login-button">
+                <li class="login-text">NAVER</li>
+                <li>로그인</li>
+              </ul>
+            </li>
+          </ul>
+      </div>
     </section>
 </body>
 </html>
