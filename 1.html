@@ -10,6 +10,9 @@
       body{
         margin: 0;
       }
+      ul{
+        padding-left: 0;
+      }
       .nav{
         display: flex;
         padding-bottom: 1.5rem;
@@ -70,6 +73,65 @@
         border: 0.1rem solid;
         border-color:green;
       }
+      .line1{
+        background-color: #eee;
+        border: 0 none;
+        color: #eee;
+        height: 0.1rem;
+      }
+      .menu{
+        display: flex;
+      }
+      .container3{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        width: 100%;
+      }
+      .mail{
+        list-style: none;
+        display: flex;
+      }
+      .shopping{
+        list-style: none;
+        display: flex;
+      }
+      .tv{
+        list-style: none;
+        display: flex;
+      }
+      .container4{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+      }
+      .plus-button{
+        margin-right: 4rem;
+      }
+      .green-text{
+        color: green;
+      }
+      .mail-icon{
+        padding-right: 0.5rem;
+      }
+      .tv-icon{
+        padding-right: 0.2rem;
+      }
+      .shopping-icon{
+        padding-left: 0.2rem;
+      }
+      .weather{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+      }
+      .weather-text{
+        font-size: 0.7rem;
+      }
     </style>
 </head>
 <body>
@@ -85,6 +147,54 @@
         <li  class="text1">해피빈</li>
       </ul>
     </nav>
-    <hr></hr>
+    <hr class="line1"></hr>
+    <section class="menu default-margin">
+      <ul class="container3">
+        <li>
+           <ul class="mail">
+              <li><i class="fa-solid fa-envelope green-text mail-icon"></i></li>
+              <li class="green-text">메일</li>
+           </ul>
+        </li>
+        <li class="green-text">카페</li>
+        <li class="green-text">블로그</li>
+        <li class="green-text">지식iN</li>
+        <li class="green-text">쇼핑</li>
+        <li>
+          <ul class="shopping">
+            <li class="green-text">쇼핑</li>
+            <li><i class="fa-solid fa-headset green-text shopping-icon"></i></li>
+          </ul>
+        </li>
+        <li class="green-text">페이</li>
+        <li>
+          <ul class="tv">
+             <li><i class="fa-solid fa-play green-text tv-icon"></i></li>
+             <li class="green-text">TV</li>
+          </ul>
+        </li>
+        <li>사전</li>
+        <li>뉴스</li>
+        <li>증권</li>
+        <li>부동산</li>
+        <li>지도</li>
+        <li>VIBE</li>
+        <li>도서</li>
+        <li>웹툰</li>
+        <li class="plus-button">더보기</li>
+        <ul class="container4">
+          <li class="weather-text">달</li>
+          <li class="weather-text">맑음</li>
+          <li>
+            <ul class="weather">
+              <li class="weather-text">20.2</li>
+              <li class="weather-text">/</li>
+              <li class="weather-text">25.2</li>
+            </ul>
+          </li>
+          <li class="weather-text">흑석동</li>
+        </ul>
+      </ul>
+    </section>
 </body>
 </html>
