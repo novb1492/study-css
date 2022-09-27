@@ -133,16 +133,20 @@
       }
       .article{
         display: flex;
-        justify-content: space-between;
+        margin-top: 2rem;
       }
       .login-area{
+        margin: 0;
         list-style: none;
-        display: column;
+        display: flex;
+        flex-direction: column;
         justify-content:space-between;
         height: 7rem;
         border: 0.1rem solid;
         width: 20rem;
         padding: 1rem 1rem;
+        background-color: gray;
+        
       }
       .login-button{
         list-style: none;
@@ -151,7 +155,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 1rem;
+       
       }
       .login-text{
         margin-right: 0.5rem;
@@ -162,7 +166,7 @@
       .regi-area{
         display: flex;
         justify-content: space-between;
-        margin-top: 1rem;
+       
       }
       .regi-find{
         list-style: none;
@@ -181,6 +185,14 @@
         display: flex;
         font-size: 0.8rem;
         padding: 0;
+      }
+      .main-banner{
+        border: 0.1rem solid;
+        width: 50rem;
+        height: 9rem;
+      }
+      .left{
+        margin-right: 3rem;
       }
     </style>
 </head>
@@ -247,7 +259,11 @@
       </ul>
     </section>
     <section class="article default-margin">
-      <div class="left">l</div>
+      <div class="left">
+        <div class="main-banner">
+          메인광고
+        </div>
+      </div>
       <div class="right">
           <ul class="login-area">
             <li class="login-text2">네이버를 더 안전하고 편리하게 이용하세요</li>
