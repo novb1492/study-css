@@ -188,11 +188,56 @@
       }
       .main-banner{
         border: 0.1rem solid;
-        width: 50rem;
+        width: 40rem;
         height: 9rem;
       }
       .left{
         margin-right: 3rem;
+      }
+      .currency-area{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 22rem;
+        border: 0.1rem solid;
+        margin-top: 2rem;
+        height: 3rem;
+        align-items: center;
+      }
+      .currency{
+        list-style: none;
+        display: flex;
+        width: 15rem;
+        margin: 0;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .buttons1{
+        list-style: none;
+        display: flex;
+        width: 4rem;
+        justify-content: space-evenly;
+      }
+      .currency-text{
+        font-size: 0.7rem;
+      }
+      .head-line-news-area{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40rem;
+        border: 0.1rem solid;
+        margin-top: 2rem;
+        height: 3rem;
+      }
+      .head-line-news{
+        list-style: none;
+        display: flex;
+      }
+      .head-line-news-category{
+        list-style: none;
+        display: flex;
       }
     </style>
 </head>
@@ -254,7 +299,7 @@
               <li class="weather-text">25.2</li>
             </ul>
           </li>
-          <li class="weather-text">흑석동</li>
+          <li class="weather-text">노량진동</li>
         </ul>
       </ul>
     </section>
@@ -263,6 +308,20 @@
         <div class="main-banner">
           메인광고
         </div>
+        <ul class="head-line-news-area">
+          <ul class="head-line-news">
+            <li>xx뉴스</li>
+            <li><i class="fa-solid fa-chevron-right"></i></li>
+            <li>김xx 자택에서 공부중인걸로...</li>
+          </ul>
+          <ul class="head-line-news-category">
+            <li>뉴스홈</li>
+            <li><i class="fa-solid fa-circle fa-2xs regi-find-mr"></i></li>
+            <li>연예</li>
+            <li>스포츠</li>
+            <li>경제</li>
+          </ul>
+        </ul>
       </div>
       <div class="right">
           <ul class="login-area">
@@ -285,6 +344,21 @@
                 <li>회원가입</li>
               </ul>
             </li>
+          </ul>
+          <ul class="currency-area">
+            <ul class="currency">
+              <li>환율</li>
+              <li><i class="fa-solid fa-flag-usa"></i></li>
+              <li>USD</li>
+              <li>1,423.00</li>
+              <li><i class="fa-solid fa-caret-down fa-xs"></i></li>
+              <li class="currency-text">-2.00</li>
+              <li class="currency-text">-0.14%</li>
+            </ul>
+              <ul class="buttons1">
+                <li><i class="fa-solid fa-chevron-left"></i></li>
+                <li><i class="fa-solid fa-chevron-right"></i></li>
+              </ul>
           </ul>
       </div>
     </section>
