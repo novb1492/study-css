@@ -143,7 +143,7 @@
         justify-content:space-between;
         height: 6rem;
         border: 0.1rem solid;
-        width: 20rem;
+        width: 19rem;
         padding: 1rem 1rem;
         background-color: gray;
         
@@ -192,15 +192,16 @@
         height: 8rem;
       }
       .left{
-        margin-right: 3rem;
+        margin-right: 2rem;
       }
       .currency-area{
         list-style: none;
         display: flex;
         justify-content: space-between;
-        width: 22rem;
+        width: 21rem;
         border: 0.1rem solid;
-        margin-top: 1rem;
+        margin: 0;
+        /* margin-top: 1rem; */
         height: 3rem;
         align-items: center;
       }
@@ -229,7 +230,7 @@
         align-items: center;
         width: 40rem;
         border: 0.1rem solid;
-        margin-top: 1rem;
+        margin: 0; 
         height: 3rem;
         background-color: gray;
       }
@@ -254,6 +255,31 @@
       }
       .head-line-new-text{
         font-size: 0.8rem;
+      }
+      .news-companys-choice-area{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      .news-companys-info{
+        list-style: none;
+        display: flex;
+      }
+      .news-setting{
+        list-style: none;
+        display: flex;
+      }
+      .left-first{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 16rem;
+      }
+      .right-first{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 12rem;
       }
     </style>
 </head>
@@ -321,28 +347,43 @@
     </section>
     <section class="article default-margin">
       <div class="left">
-        <div class="main-banner">
-          메인광고
+        <div class="left-first">
+          <div class="main-banner">
+            메인광고
+          </div>
+          <ul class="head-line-news-area">
+            <ul class="head-line-news">
+              <li>XX뉴스</li>
+              <li><i class="fa-solid fa-chevron-right  fa-2xs"></i></li>
+              <li class="head-line-new-text">김xx 자택에서 공부중인걸로...</li>
+            </ul>
+            <ul class="head-line-news-category">
+              <li>뉴스홈</li>
+              <li><i class="fa-solid fa-circle fa-2xs regi-find-mr circle2"></i></li>
+              <li>연예</li>
+              <li>스포츠</li>
+              <li>경제</li>
+            </ul>
+          </ul>
+          <ul class="news-companys-choice-area">
+            <ul class="news-companys-info">
+              <li><i class="fa-solid fa-newspaper"></i></li>
+              <li>뉴스스탠드</li>
+              <li><i class="fa-solid fa-chevron-right  fa-2xs"></i></li>
+              <li>구독한 언론사</li>
+              <li>전체 언론사</li>
+            </ul>
+            <ul class="news-setting">
+              <li><i class="fa-solid fa-bars"></i></li>
+              <li><i class="fa-solid fa-bars-progress"></i></li>
+              <li><i class="fa-solid fa-gear"></i></li>
+            </ul>
+          </ul>
         </div>
-        <ul class="head-line-news-area">
-          <ul class="head-line-news">
-            <li>XX뉴스</li>
-            <li><i class="fa-solid fa-chevron-right  fa-2xs"></i></li>
-            <li class="head-line-new-text">김xx 자택에서 공부중인걸로...</li>
-          </ul>
-          <ul class="head-line-news-category">
-            <li>뉴스홈</li>
-            <li><i class="fa-solid fa-circle fa-2xs regi-find-mr circle2"></i></li>
-            <li>연예</li>
-            <li>스포츠</li>
-            <li>경제</li>
-          </ul>
-          <ul>
-
-          </ul>
-        </ul>
+        
       </div>
       <div class="right">
+        <div class="right-first"> 
           <ul class="login-area">
             <li class="login-text2">네이버를 더 안전하고 편리하게 이용하세요</li>
             <li>
@@ -379,6 +420,8 @@
                 <li><i class="fa-solid fa-chevron-right"></i></li>
               </ul>
           </ul>
+        </div>
+          
       </div>
     </section>
 </body>
