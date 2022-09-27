@@ -295,7 +295,9 @@
       }
       .news-stand-area{
         display: flex;
-        border: 0.1rem solid;
+        border-top: 0.1rem solid;
+        border-left: 0.1rem solid;
+        border-bottom: 0.1rem solid;
         width: 40rem;
       }
       .news-stand-detail{
@@ -356,6 +358,16 @@
       }
       .news-stand-info-noty-text{
         font-size: 0.3rem;
+      }
+      .news-button1{
+        margin-top: 11rem;
+        margin-left: -1rem;
+        position: absolute;
+      }
+      .news-button2{
+        margin-top: 11rem;
+        margin-left: 40rem;
+        position: absolute;
       }
     </style>
 </head>
@@ -442,6 +454,8 @@
             </ul>
           </ul>
           <ul class="news-companys-choice-area">
+            <i class="fa-solid fa-chevron-left  fa-xl news-button1"></i>
+            <i class="fa-solid fa-chevron-right  fa-xl news-button2"></i>
             <ul class="news-companys-info">
               <li><i class="fa-solid fa-newspaper"></i></li>
               <li>뉴스스탠드</li>
