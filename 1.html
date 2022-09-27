@@ -12,6 +12,7 @@
       }
       ul{
         padding-left: 0;
+        margin: 0;
       }
       .nav{
         display: flex;
@@ -201,7 +202,6 @@
         width: 21rem;
         border: 0.1rem solid;
         margin: 0;
-        /* margin-top: 1rem; */
         height: 3rem;
         align-items: center;
       }
@@ -257,29 +257,105 @@
         font-size: 0.8rem;
       }
       .news-companys-choice-area{
+        padding-top: 1rem;
         list-style: none;
         display: flex;
         justify-content: space-between;
+        margin: 0;
       }
       .news-companys-info{
         list-style: none;
         display: flex;
+        width: 20rem;
+        justify-content: space-between;
       }
       .news-setting{
         list-style: none;
         display: flex;
+        justify-content: space-evenly;
+        width: 5rem;
       }
       .left-first{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 16rem;
+        height: 33rem;
       }
       .right-first{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 12rem;
+        height: 28rem;
+      }
+      .sub-banner{
+        margin: 0;
+        height: 15rem;
+        border: 0.1rem solid;
+        width: 21rem;
+      }
+      .news-stand-area{
+        display: flex;
+        border: 0.1rem solid;
+        width: 40rem;
+      }
+      .news-stand-detail{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0.5rem 1rem;
+        justify-content: space-evenly;
+        height: 16rem;
+      }
+      .news-stand-header{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 15rem;
+      }
+      .news-stand-body{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+      }
+      .news-stand-category{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-right: 4rem;
+        background-color: gray;
+        height: 17rem;
+        justify-content: space-evenly;
+        padding-left: 1rem;
+        border-right: 0.1rem solid;
+      }
+      .news-stand-category-text{
+        font-size: 0.9rem;
+      }
+      .news-thum-nail{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 13rem;
+      }
+      .news-short-title{
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+      .news-stand-info{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+      }
+      .news-stand-info-text{
+        font-size: 0.8rem;
+      }
+      .news-stand-info-area{
+        margin-left: 1rem;
+      }
+      .news-stand-info-noty-text{
+        font-size: 0.3rem;
       }
     </style>
 </head>
@@ -379,8 +455,42 @@
               <li><i class="fa-solid fa-gear"></i></li>
             </ul>
           </ul>
+          <div class="news-stand-area">
+            <ul class="news-stand-category">
+              <li class="news-stand-category-text">종합경제</li>
+              <li class="news-stand-category-text">방송통신</li>
+              <li class="news-stand-category-text">IT</li>
+              <li class="news-stand-category-text">영자지</li>
+              <li class="news-stand-category-text">스포츠/연예</li>
+              <li class="news-stand-category-text">매거진/전문지</li>
+              <li class="news-stand-category-text">지역</li>
+            </ul>
+            <ul class="news-stand-detail">
+                <ul class="news-stand-header">
+                  <li>xx뉴스</li>
+                  <li style="font-size: 0.5rem;">2022.09.27 19:27 편집</li>
+                  <li>구독하기</li>
+                </ul>
+                <div class="news-stand-body">
+                  <ul class="news-thum-nail">
+                    <li><img src="./2022_Summer2_main_drink_03.png" alt="" style="width: 11rem; height: 8rem;"></li>
+                    <li class="news-short-title">“산업용 카메라, 제조·로봇·서비스 분야로 적용 확대”</li>
+                  </ul>
+                  <div class="news-stand-info-area">
+                    <ul class="news-stand-info">
+                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
+                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
+                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
+                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
+                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
+                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
+                    </ul>
+                    <span class="news-stand-info-noty-text">언론사에서 직접 편집한 뉴스입니다.</span>
+                  </div>
+                </div>
+            </ul>
+          </div>
         </div>
-        
       </div>
       <div class="right">
         <div class="right-first"> 
@@ -420,6 +530,7 @@
                 <li><i class="fa-solid fa-chevron-right"></i></li>
               </ul>
           </ul>
+          <div class="sub-banner">서브광고</div>
         </div>
           
       </div>
