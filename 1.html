@@ -151,12 +151,36 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 1rem;
       }
       .login-text{
         margin-right: 0.5rem;
       }
       .login-text2{
         font-size: 0.5rem;
+      }
+      .regi-area{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+      .regi-find{
+        list-style: none;
+        display: flex;
+        font-size: 0.8rem;
+        padding: 0;
+      }
+      .lock-icon{
+        margin-right: 0.4rem;
+      }
+      .regi-find-mr{
+        margin-right: 0.4rem;
+      }
+      .regi-try{
+        list-style: none;
+        display: flex;
+        font-size: 0.8rem;
+        padding: 0;
       }
     </style>
 </head>
@@ -231,6 +255,18 @@
               <ul class="login-button">
                 <li class="login-text">NAVER</li>
                 <li>로그인</li>
+              </ul>
+            </li>
+            <li class="regi-area">
+              <ul class="regi-find">
+                <li><i class="fa-solid fa-lock regi-find-mr"></i></li>
+                <li class="regi-find-mr">아이디찾기</li>
+                <li><i class="fa-solid fa-circle fa-2xs regi-find-mr"></i></li>
+                <li>비밀번호찾기</li>
+              </ul>
+              <ul class="regi-try">
+                <li><i class="fa-solid fa-user regi-find-mr"></i></li>
+                <li>회원가입</li>
               </ul>
             </li>
           </ul>
