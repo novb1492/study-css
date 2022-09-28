@@ -18,6 +18,7 @@
       color: #fff;
       font-size: 100px;
       padding: 100px 0;
+      height: 10vh;
     }
     /* 짝수, 홀수 색상 구분하기 위해 */
     li:nth-child(2n) {
@@ -27,28 +28,55 @@
 </head>
 <body>
   <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
+    <li class="li" id="li1">1</li>
+    <li class="li" id="li2">2</li>
+    <li class="li" id="li3">3</li>
   </ul>
     
     <script>
-      let page=1;
+      let beforeScrollY=0;
+      let num=4;
+      let paginSize=3;
+      let up=0;
       document.addEventListener('scroll', () => {
           const ul = document.querySelector('ul');
-          let li;
           let count = ul.children.length;
-          console.log(`${document.body.offsetHeight}`);
-          console.log(`스크롤위치:${window.scrollY}`);
-          console.log(`화면사이즈:${window.innerHeight}`);
-        
-          if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-            li = ul.appendChild(document.createElement('li'));
-            li.textContent = ++count;
-            page+=1;
-            history.pushState(null, null,`http://127.0.0.1:5500/1.html?page=${page}`);
+          // console.log(`${document.body.offsetHeight}`);
+          // console.log(`화면사이즈:${window.innerHeight}`);
+          // console.log(`스크롤위치:${window.scrollY}`);
+          if((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            for(let i=0;i<paginSize;i++){
+              let li=document.createElement('li');
+              li.id=`li${num}`;
+              li.classList.add('li');
+              li.innerText = ++count;
+              ul.appendChild(li);
+              num+=1;
+            }
+            changeUrl(1);
+
           }
+          beforeScrollY=window.scrollY;
         });
-    </script>
+        function changeUrl(num) {
+          let page=1;
+          try {
+            page=getParam('page')*1+num;
+          } catch (error) {
+            page=1;
+          }
+          history.pushState(null, null,`http://127.0.0.1:5500/1.html?page=${page}`);
+        }
+        function getParam(sname) {
+            var params = location.search.substr(location.search.indexOf("?") + 1);
+            var sval = "";
+            params = params.split("&");
+            for (var i = 0; i < params.length; i++) {
+              var temp = params[i].split("=");
+                if ([temp[0]] == sname) { sval = temp[1]; }
+            }
+            return sval;
+        }
+            </script>
 </body>
 </html>
