@@ -7,554 +7,69 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/37cd0d651d.js" crossorigin="anonymous"></script>
     <style>
-      body{
-        margin: 0;
-      }
-      ul{
-        padding-left: 0;
-        margin: 0;
-        list-style: none;
-      }
-      .nav{
-        display: flex;
-        padding-bottom: 1.5rem;
-      }
-      .container{
-        display: flex;
-        align-items: center;
-        margin-top: 3rem;
-        padding: 0;
-        width: 100%;
-      }
-      .container2{
-        display: flex;
-        margin-top: 0.5rem;
-        padding: 0;
-        justify-content: space-evenly;
-        width: 100%;
-      }
-      .mainText{
-        font-size: 2.5rem;
-        color: green;
-      }
-      .hat-icon{
-        font-size:2rem;    
-        margin-right: 0.5rem;    
-      }
-      .search-input{
-        width: 30rem;
-        height: 3rem;
-        margin-left: 2rem;
-        border-color:green;
-      }
-      .start-and-arrow{
-        display: flex;
-      }
-      .start-text{
-        font-size: 0.7rem;
-        padding-right: 0.5rem;
-      }
-      .start-icon{
-        width: 0.5rem;
-      }
-      .default-margin{
-        margin: 0 25rem;
-      }
-      .text1{
-        font-size: 0.8rem;
-      }
-      .search-area{
-        display: flex;
-      }
-      .search-button{
-        width: 5rem;
-      }
-      .search-glass{
-        border: 0.1rem solid;
-        border-color:green;
-      }
-      .line1{
-        background-color: #eee;
-        border: 0 none;
-        color: #eee;
-        height: 0.1rem;
-      }
-      .menu{
-        display: flex;
-      }
-      .container3{
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        width: 100%;
-      }
-      .mail{
-        display: flex;
-      }
-      .shopping{
-        display: flex;
-      }
-      .tv{
-        display: flex;
-      }
-      .container4{
-        display: flex;
-        justify-content: space-between;
-        width: 20%;
-      }
-      .plus-button{
-        margin-right: 4rem;
-      }
-      .green-text{
-        color: green;
-      }
-      .mail-icon{
-        padding-right: 0.5rem;
-      }
-      .tv-icon{
-        padding-right: 0.2rem;
-      }
-      .shopping-icon{
-        padding-left: 0.2rem;
-      }
-      .weather{
-        display: flex;
-        justify-content: space-between;
-        width: 10%;
-      }
-      .weather-text{
-        font-size: 0.7rem;
-      }
-      .article{
-        display: flex;
-        margin-top: 2rem;
-      }
-      .login-area{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        height: 6rem;
-        border: 0.1rem solid;
-        width: 19rem;
-        padding: 1rem 1rem;
-        background-color: gray;
-        
-      }
-      .login-button{
-        background-color: green;
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-      }
-      .login-text{
-        margin-right: 0.5rem;
-      }
-      .login-text2{
-        font-size: 0.5rem;
-      }
-      .regi-area{
-        display: flex;
-        justify-content: space-between;
-       
-      }
-      .regi-find{
-        display: flex;
-        font-size: 0.8rem;
-        padding: 0;
-      }
-      .lock-icon{
-        margin-right: 0.4rem;
-      }
-      .regi-find-mr{
-        margin-right: 0.4rem;
-      }
-      .regi-try{
-        display: flex;
-        font-size: 0.8rem;
-        padding: 0;
-      }
-      .main-banner{
-        border: 0.1rem solid;
-        width: 40rem;
-        height: 8rem;
-      }
-      .left{
-        margin-right: 2rem;
-      }
-      .currency-area{
-        display: flex;
-        justify-content: space-between;
-        width: 21rem;
-        border: 0.1rem solid;
-        margin: 0;
-        height: 3rem;
-        align-items: center;
-      }
-      .currency{
-        display: flex;
-        width: 15rem;
-        margin: 0;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-left: 0.5rem;
-      }
-      .buttons1{
-        display: flex;
-        width: 4rem;
-        justify-content: space-evenly;
-      }
-      .currency-text{
-        font-size: 0.7rem;
-      }
-      .head-line-news-area{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 40rem;
-        border: 0.1rem solid;
-        margin: 0; 
-        height: 3rem;
-        background-color: gray;
-      }
-      .head-line-news{
-        display: flex;
-        width: 15rem;
-        margin-left: 0.5rem;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .head-line-news-category{
-        display: flex;
-        font-size: 0.8rem;
-        width: 10rem;
-        justify-content: space-between;
-        margin-right: 0.5rem;
-      }
-      .circle2{
-        font-size: 0.1rem;
-      }
-      .head-line-new-text{
-        font-size: 0.8rem;
-      }
-      .news-companys-choice-area{
-        padding-top: 1rem;
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-      }
-      .news-companys-info{
-        display: flex;
-        width: 20rem;
-        justify-content: space-between;
-      }
-      .news-setting{
-        display: flex;
-        justify-content: space-evenly;
-        width: 5rem;
-      }
-      .left-first{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 33rem;
-      }
-      .right-first{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 28rem;
-      }
-      .sub-banner{
-        margin: 0;
-        height: 15rem;
-        border: 0.1rem solid;
-        width: 21rem;
-      }
-      .news-stand-area{
-        display: flex;
-        border-top: 0.1rem solid;
-        border-left: 0.1rem solid;
-        border-bottom: 0.1rem solid;
-        width: 40rem;
-      }
-      .news-stand-detail{
-        display: flex;
-        flex-direction: column;
-        padding: 0.5rem 1rem;
-        justify-content: space-evenly;
-        height: 16rem;
-      }
-      .news-stand-header{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 15rem;
-      }
-      .news-stand-body{
-        display: flex;
-        justify-content: space-evenly;
-      }
-      .news-stand-category{
-        display: flex;
-        flex-direction: column;
-        padding-right: 4rem;
-        background-color: gray;
-        height: 17rem;
-        justify-content: space-evenly;
-        padding-left: 1rem;
-        border-right: 0.1rem solid;
-      }
-      .news-stand-category-text{
-        font-size: 0.9rem;
-      }
-      .news-thum-nail{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 13rem;
-      }
-      .news-short-title{
-        margin-top: 0.5rem;
-        font-size: 0.9rem;
-      }
-      .news-stand-info{
-        display: flex;
-        flex-direction: column;
-      }
-      .news-stand-info-text{
-        font-size: 0.8rem;
-      }
-      .news-stand-info-area{
-        margin-left: 1rem;
-      }
-      .news-stand-info-noty-text{
-        font-size: 0.3rem;
-      }
-      .news-button1{
-        margin-top: 11rem;
-        margin-left: -1rem;
-        position: absolute;
-      }
-      .news-button2{
-        margin-top: 11rem;
-        margin-left: 40rem;
-        position: absolute;
-      }
-      .shopping-category{
-        display: flex;
-        justify-content: space-between;
-      }
-      .cate-one{
-        display: flex;
-        justify-content: space-between;
-        width: 6.5rem;
-      }
-      .cate-two{
-        display: flex;
-        justify-content: space-between;
-        width: 8rem;
-      }
-      .shopping-area{
-        border: 0.1rem solid;
+      body {height:2000px}
+      .box {background:blue; height:200px; width:200px;margin:0 auto;}
+      .box:nth-child(odd) {background:red;}
+      .box:first-child {background:purple;}
+      .pagination {text-align:center;}
+      .infinite {
+        counter-reset: section;
+      }
+      .list {
+        text-align:center;
+      }
+      .list:before {
+        counter-increment: section;
+        content: counter(section);  
+        color:black;
+      margin:0 auto;
+        font-size: 40px;
       }
     </style>
 </head>
 <body>
-    <nav class="nav default-margin">
-      <ul class="container">
-        <li><i class="fa-solid fa-hat-cowboy hat-icon"></i></li>
-        <li><span class="mainText">NAVER</span></li>
-        <li class="search-area"><input type="text" class="search-input"><i class="fa-solid fa-magnifying-glass search-glass fa-3x search-glass"></i></li>
-      </ul>
-      <ul class="container2">
-        <li class="start-and-arrow"><span class="start-text">네이버를 시작페이지로</span><i class="fa-solid fa-arrow-right-long start-icon"></i></li>
-        <li class="text1">쥬니버네이버</li>
-        <li  class="text1">해피빈</li>
-      </ul>
-    </nav>
-    <hr class="line1"></hr>
-    <section class="menu default-margin">
-      <ul class="container3">
-        <li>
-           <ul class="mail">
-              <li><i class="fa-solid fa-envelope green-text mail-icon"></i></li>
-              <li class="green-text">메일</li>
-           </ul>
-        </li>
-        <li class="green-text">카페</li>
-        <li class="green-text">블로그</li>
-        <li class="green-text">지식iN</li>
-        <li class="green-text">쇼핑</li>
-        <li>
-          <ul class="shopping">
-            <li class="green-text">쇼핑</li>
-            <li><i class="fa-solid fa-headset green-text shopping-icon"></i></li>
-          </ul>
-        </li>
-        <li class="green-text">페이</li>
-        <li>
-          <ul class="tv">
-             <li><i class="fa-solid fa-play green-text tv-icon"></i></li>
-             <li class="green-text">TV</li>
-          </ul>
-        </li>
-        <li>사전</li>
-        <li>뉴스</li>
-        <li>증권</li>
-        <li>부동산</li>
-        <li>지도</li>
-        <li>VIBE</li>
-        <li>도서</li>
-        <li>웹툰</li>
-        <li class="plus-button">더보기</li>
-        <ul class="container4">
-          <li class="weather-text">달</li>
-          <li class="weather-text">맑음</li>
-          <li>
-            <ul class="weather">
-              <li class="weather-text">20.2</li>
-              <li class="weather-text">/</li>
-              <li class="weather-text">25.2</li>
-            </ul>
-          </li>
-          <li class="weather-text">노량진동</li>
-        </ul>
-      </ul>
-    </section>
-    <section class="article default-margin">
-      <div class="left">
-        <div class="left-first">
-          <div class="main-banner">
-            메인광고
-          </div>
-          <ul class="head-line-news-area">
-            <ul class="head-line-news">
-              <li>XX뉴스</li>
-              <li><i class="fa-solid fa-chevron-right  fa-2xs"></i></li>
-              <li class="head-line-new-text">김xx 자택에서 공부중인걸로...</li>
-            </ul>
-            <ul class="head-line-news-category">
-              <li>뉴스홈</li>
-              <li><i class="fa-solid fa-circle fa-2xs regi-find-mr circle2"></i></li>
-              <li>연예</li>
-              <li>스포츠</li>
-              <li>경제</li>
-            </ul>
-          </ul>
-          <ul class="news-companys-choice-area">
-            <i class="fa-solid fa-chevron-left  fa-xl news-button1"></i>
-            <i class="fa-solid fa-chevron-right  fa-xl news-button2"></i>
-            <ul class="news-companys-info">
-              <li><i class="fa-solid fa-newspaper"></i></li>
-              <li>뉴스스탠드</li>
-              <li><i class="fa-solid fa-chevron-right  fa-2xs"></i></li>
-              <li>구독한 언론사</li>
-              <li>전체 언론사</li>
-            </ul>
-            <ul class="news-setting">
-              <li><i class="fa-solid fa-bars"></i></li>
-              <li><i class="fa-solid fa-bars-progress"></i></li>
-              <li><i class="fa-solid fa-gear"></i></li>
-            </ul>
-          </ul>
-          <div class="news-stand-area">
-            <ul class="news-stand-category">
-              <li class="news-stand-category-text">종합경제</li>
-              <li class="news-stand-category-text">방송통신</li>
-              <li class="news-stand-category-text">IT</li>
-              <li class="news-stand-category-text">영자지</li>
-              <li class="news-stand-category-text">스포츠/연예</li>
-              <li class="news-stand-category-text">매거진/전문지</li>
-              <li class="news-stand-category-text">지역</li>
-            </ul>
-            <ul class="news-stand-detail">
-                <ul class="news-stand-header">
-                  <li>xx뉴스</li>
-                  <li style="font-size: 0.5rem;">2022.09.27 19:27 편집</li>
-                  <li>구독하기</li>
-                </ul>
-                <div class="news-stand-body">
-                  <ul class="news-thum-nail">
-                    <li><img src="./2022_Summer2_main_drink_03.png" alt="" style="width: 11rem; height: 8rem;"></li>
-                    <li class="news-short-title">“산업용 카메라, 제조·로봇·서비스 분야로 적용 확대”</li>
-                  </ul>
-                  <div class="news-stand-info-area">
-                    <ul class="news-stand-info">
-                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
-                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
-                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
-                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
-                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
-                      <li class="news-stand-info-text">KB국민은행, ‘리브 넥스트’로 10대 ‘금융 독립’ 지원</li>
-                    </ul>
-                    <span class="news-stand-info-noty-text">언론사에서 직접 편집한 뉴스입니다.</span>
-                  </div>
-                </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="right">
-        <div class="right-first"> 
-          <ul class="login-area">
-            <li class="login-text2">네이버를 더 안전하고 편리하게 이용하세요</li>
-            <li>
-              <ul class="login-button">
-                <li class="login-text">NAVER</li>
-                <li>로그인</li>
-              </ul>
-            </li>
-            <li class="regi-area">
-              <ul class="regi-find">
-                <li><i class="fa-solid fa-lock regi-find-mr"></i></li>
-                <li class="regi-find-mr">아이디찾기</li>
-                <li><i class="fa-solid fa-circle fa-2xs regi-find-mr"></i></li>
-                <li>비밀번호찾기</li>
-              </ul>
-              <ul class="regi-try">
-                <li><i class="fa-solid fa-user regi-find-mr"></i></li>
-                <li>회원가입</li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="currency-area">
-            <ul class="currency">
-              <li>환율</li>
-              <li><i class="fa-solid fa-flag-usa"></i></li>
-              <li>USD</li>
-              <li>1,423.00</li>
-              <li><i class="fa-solid fa-caret-down fa-xs"></i></li>
-              <li class="currency-text">-2.00</li>
-              <li class="currency-text">-0.14%</li>
-            </ul>
-              <ul class="buttons1">
-                <li><i class="fa-solid fa-chevron-left"></i></li>
-                <li><i class="fa-solid fa-chevron-right"></i></li>
-              </ul>
-          </ul>
-          <div class="sub-banner">서브광고</div>
-        </div>
-        <div class="right-second">
-          <div class="shopping-category">
-            <ul class="cate-one">
-              <li>N</li>
-              <li>트렌드쇼핑</li>
-              <li><i class="fa-solid fa-chevron-right  fa-2xs"></i></li>
-            </ul>
-            <ul class="cate-two">
-              <li>상품</li>
-              <li>쇼핑몰</li>
-              <li>MEN</li>
-            </ul>
-          </div>
-          <div class="shopping-area">
-
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="infinite">
+    <div class="list">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    </div>
+    <div class="pagination">페이지네이션</div>
+    
+    <script>
+      let page=1;
+      let screenHeight = screen.height; // 화면 크기
+      let fullContent = document.querySelector('.infinite'); // 전체를 둘러싼 컨텐츠 정보획득
+      window.addEventListener("scroll", (event) => {
+        let scrollY = this.scrollY;
+        console.log(`전체높이:${screenHeight}`);
+        if(scrollY>=screenHeight*0.8){
+          console.log('다음페이지 요청');
+          console.log(`전체높이의80%:${screenHeight*0.8}`);
+          console.log(`스크롤:${scrollY}`);
+          const listArea=document.querySelector('.infinite');
+          const divList=makeDivClassList();
+          listArea.append(makeDivsClassBox(divList));
+          page+=1;
+          history.pushState(null, null,`http://127.0.0.1:5500/1.html?page=${page}`);
+        }
+    });
+    function makeDivClassList() {
+      const div=document.createElement('div');
+      div.classList.add('list');
+      return div;
+    }
+    function makeDivsClassBox(divList) {
+      for(let i=0;i<5;i++){
+        const div=document.createElement('div');
+        div.classList.add('box');
+        divList.append(div);
+      }
+      return divList;
+    }
+    </script>
 </body>
 </html>
