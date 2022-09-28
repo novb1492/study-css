@@ -7,75 +7,41 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/37cd0d651d.js" crossorigin="anonymous"></script>
     <style>
-      body {height:2000px}
-      .box {background:blue; height:200px; width:200px;margin:0 auto;}
-      .box:nth-child(odd) {background:red;}
-      .box:first-child {background:purple;}
-      .pagination {text-align:center;}
-      .infinite {
-        counter-reset: section;
-      }
-      .list {
-        text-align:center;
-      }
-      .list:before {
-        counter-increment: section;
-        content: counter(section);  
-        color:black;
-      margin:0 auto;
-        font-size: 40px;
-      }
+     ul {
+        padding-left: 0;
+    }
+    ul li {
+      background-color: pink;
+      margin-bottom: 20px;
+      list-style: none;
+      text-align: center;
+      color: #fff;
+      font-size: 100px;
+      padding: 100px 0;
+    }
+    /* 짝수, 홀수 색상 구분하기 위해 */
+    li:nth-child(2n) {
+      background-color: skyblue;
+    }
     </style>
 </head>
 <body>
-  <div class="infinite">
-    <div class="list">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-    </div>
-    <div class="pagination">페이지네이션</div>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
     
     <script>
-      let page=1;
-      window.addEventListener("scroll", (event) => {
-        let screenHeight = screen.height; // 화면 크기
-        let fullContent = document.querySelector('.infinite'); // 전체를 둘러싼 컨텐츠 정보획득
-        let scrollY = this.scrollY;
-        const fullHeight = fullContent.clientHeight;  
-        // console.log(`화면높이:${screenHeight}`);
-        // console.log(`스크롤:${scrollY}`);
-        // console.log(`전체높이:${fullHeight}`);
-        console.log("s:"+fullHeight*0.5);
-        console.log(scrollY);
-        if (fullHeight*0.5 <= scrollY){
-          console.log('다음페이지 요청');
-          const listArea=document.querySelector('.infinite');
-          const divList=makeDivClassList();
-          listArea.appendChild(makeDivsClassBox(divList));
-          page+=1;
-          history.pushState(null, null,`http://127.0.0.1:5500/1.html?page=${page}`);
-        }else if ( scrollY == 0 ) {
-       
-        }
-    });
-
-    function makeDivClassList() {
-      const div=document.createElement('div');
-      div.classList.add('list');
-      return div;
-    }
-    function makeDivsClassBox(divList) {
-      for(let i=0;i<5;i++){
-        const div=document.createElement('div');
-        div.classList.add('box');
-        divList.appendChild(div);
-      }
-      return divList;
-    }
+      document.addEventListener('scroll', () => {
+          const $ul = document.querySelector('ul');
+          let $li;
+          let count = $ul.children.length;
+          if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            $li = $ul.appendChild(document.createElement('li'));
+            $li.textContent = ++count;
+          }
+        });
     </script>
 </body>
 </html>
