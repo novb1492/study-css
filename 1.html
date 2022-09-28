@@ -41,22 +41,29 @@
     
     <script>
       let page=1;
-      let screenHeight = screen.height; // 화면 크기
-      let fullContent = document.querySelector('.infinite'); // 전체를 둘러싼 컨텐츠 정보획득
       window.addEventListener("scroll", (event) => {
+        let screenHeight = screen.height; // 화면 크기
+        let fullContent = document.querySelector('.infinite'); // 전체를 둘러싼 컨텐츠 정보획득
         let scrollY = this.scrollY;
-        console.log(`전체높이:${screenHeight}`);
-        if(scrollY>=screenHeight*0.8){
+        const fullHeight = fullContent.clientHeight;  
+        // console.log(`화면높이:${screenHeight}`);
+        // console.log(`스크롤:${scrollY}`);
+        // console.log(`전체높이:${fullHeight}`);
+        console.log("s:"+fullHeight*0.5);
+        console.log(scrollY);
+        if (fullHeight*0.5 <= scrollY){
           console.log('다음페이지 요청');
-          console.log(`전체높이의80%:${screenHeight*0.8}`);
-          console.log(`스크롤:${scrollY}`);
           const listArea=document.querySelector('.infinite');
           const divList=makeDivClassList();
-          listArea.append(makeDivsClassBox(divList));
+          listArea.appendChild(makeDivsClassBox(divList));
           page+=1;
           history.pushState(null, null,`http://127.0.0.1:5500/1.html?page=${page}`);
+        }else if ( scrollY == 0 ) {
+          upup = true;
+          madeBox();
         }
     });
+
     function makeDivClassList() {
       const div=document.createElement('div');
       div.classList.add('list');
@@ -66,7 +73,7 @@
       for(let i=0;i<5;i++){
         const div=document.createElement('div');
         div.classList.add('box');
-        divList.append(div);
+        divList.appendChild(div);
       }
       return divList;
     }
