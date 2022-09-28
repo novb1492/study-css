@@ -33,13 +33,20 @@
   </ul>
     
     <script>
+      let page=1;
       document.addEventListener('scroll', () => {
-          const $ul = document.querySelector('ul');
-          let $li;
-          let count = $ul.children.length;
+          const ul = document.querySelector('ul');
+          let li;
+          let count = ul.children.length;
+          console.log(`${document.body.offsetHeight}`);
+          console.log(`스크롤위치:${window.scrollY}`);
+          console.log(`화면사이즈:${window.innerHeight}`);
+        
           if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-            $li = $ul.appendChild(document.createElement('li'));
-            $li.textContent = ++count;
+            li = ul.appendChild(document.createElement('li'));
+            li.textContent = ++count;
+            page+=1;
+            history.pushState(null, null,`http://127.0.0.1:5500/1.html?page=${page}`);
           }
         });
     </script>
